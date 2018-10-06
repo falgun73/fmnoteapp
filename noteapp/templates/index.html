@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+
+    {% block content %}
+        <div class="notelist">
+        {% for note in notes %}
+            <div class="note">
+                <p>{{ note }}</p>
+            </div>
+        {% endfor %}
+        {#{% for i in range(0,100) %}
+            <div class="note">
+                <p>Example Note</p>
+            </div>
+        {% endfor %}#}
+        </div>
+    {% endblock %}
